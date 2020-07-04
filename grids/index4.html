@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=2, initial-scale=1.0">
+  <style>
+    .wrapper {
+      display: grid;
+      /* grid-template: 1fr 2fr 1fr; */
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+      height: 100vh;
+    }
+
+    .wrapper>*{
+      padding: 1em;
+      margin: 1em;
+      border: red 1px solid;
+    }
+
+    header {
+      grid-column: 1/4;
+    }
+
+    .left {
+      grid-column: 1/2;
+    }
+
+    .content {
+      grid-column: 2/3;
+    }
+
+    .right {
+      grid-column: 3/4;
+    }
+
+    footer {
+      grid-column: 1/4;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>HEADER</header>
+    <div class="left-sidebar">Lorem ipsum dolor sit.</div>
+    <div class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, accusamus voluptate dolor recusandae dolorum iure, pariatur fugiat illo facere autem officiis alias vel atque odit quia, iusto ipsa minus deleniti.</div>
+    <div class="right-sidebar">Lorem ipsum dolor sit.</div>
+    <footer>FOOTER</footer>
+  </div>
+</body>
+
+</html>

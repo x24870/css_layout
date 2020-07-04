@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @media(min-width: 1080px) {
+
+      .container1 {
+        display: flex;
+        /* align-items: flex-start; */
+        /* align-items: flex-end; */
+        /* align-items: center; */
+        /* flex-direction: column; */
+      }
+
+      .container2 {
+        display: flex;
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        justify-content: space-around;
+      }
+    }
+
+    .container1>div {
+      border: black 1px solid;
+      padding: 1em;
+    }
+
+    .container2>div {
+      background-color: burlywood;
+      padding: 1em;
+      border: chocolate 1px solid;
+    }
+
+    .container3 {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+    .container3>div {
+      background-color: cornflowerblue;
+      padding: 1em;
+      border: darkblue 1px solid;
+      flex-basis: 25%;
+    }
+
+    .box1 {
+      flex: 3;
+      order: 2;
+    }
+
+    .box2 {
+      flex: 1;
+      order: 1;
+    }
+
+    .box3 {
+      flex: 1;
+      order: 3;
+    }
+
+    .box4 {
+      /* width: 20%; */
+      flex-basis: 20%;
+    }
+
+    .box5 {
+      /* width: 30%; */
+      flex-basis: 30%;
+    }
+
+    .box6 {
+      /* width: 20%; */
+      flex-basis: 20%;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container1">
+    <div class="box1">
+      <h3>box 1</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quo?</p>
+    </div>
+    <div class="box2">
+      <h3>box 2</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quo?</p>
+    </div>
+    <div class="box3">
+      <h3>box 3</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quo?</p>
+    </div>
+  </div>
+
+  <div class="container2">
+    <div class="box4">
+      <h3>box 4</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit perferendis magni facere blanditiis amet,
+        obcaecati tenetur quos. Cumque numquam dicta quibusdam commodi esse laborum illum expedita, at rerum! Quisquam
+        debitis perferendis hic odit esse voluptatem totam minus optio aut, eum, molestiae, ducimus at omnis fugiat ex
+        quam tempore culpa nihil. Nulla vitae voluptates voluptate itaque architecto quasi, magnam magni impedit, et
+        totam numquam eveniet, aliquam alias tenetur velit cum voluptatibus repellendus libero quod molestiae veniam
+        explicabo recusandae corporis iure. Voluptas.</p>
+    </div>
+    <div class="box5">
+      <h3>box 5</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, consequatur repudiandae aspernatur
+        laudantium voluptatum praesentium laboriosam esse adipisci quas enim labore id reiciendis corporis ea expedita
+        neque est, libero nobis, error impedit ducimus doloremque quibusdam exercitationem? Repellat dolores voluptas
+        quo accusamus necessitatibus impedit? Velit, in, et voluptatibus tenetur repellendus adipisci odio, error eius
+        suscipit asperiores aliquid aliquam sequi nisi voluptate alias magnam. Incidunt fugit, similique nihil quasi
+        culpa odio sit ut necessitatibus cum libero ex nesciunt, labore eius. Veritatis, labore.</p>
+    </div>
+    <div class="box6">
+      <h3>box 6</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique deserunt dicta quibusdam minima commodi
+        voluptatem magnam ducimus maiores quidem odio. Nulla error dolorum doloremque similique quis ratione maxime
+        sapiente praesentium est ipsa? Saepe placeat voluptatum temporibus. Voluptatibus, id nisi incidunt molestiae
+        temporibus hic explicabo, assumenda voluptatem tenetur suscipit omnis officiis ipsum labore consectetur sunt
+        veniam rem iste odit architecto repellat illum eius? In exercitationem quia ab cum inventore, quo saepe hic
+        iusto eos aspernatur pariatur corporis quidem enim quaerat excepturi?</p>
+    </div>
+  </div>
+
+  <div class="container3">
+    <div class="box7">
+      <h3>box7</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ullam sit accusamus tempore, aperiam autem
+        nemo voluptates aliquam reiciendis, perspiciatis necessitatibus nisi repellat aspernatur cum, consequuntur
+        assumenda ab! Necessitatibus, architecto?</p>
+    </div>
+    <div class="box8">
+      <h3>box8</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ullam sit accusamus tempore, aperiam autem
+        nemo voluptates aliquam reiciendis, perspiciatis necessitatibus nisi repellat aspernatur cum, consequuntur
+        assumenda ab! Necessitatibus, architecto?</p>
+    </div>
+    <div class="box9">
+      <h3>box9</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ullam sit accusamus tempore, aperiam autem
+        nemo voluptates aliquam reiciendis, perspiciatis necessitatibus nisi repellat aspernatur cum, consequuntur
+        assumenda ab! Necessitatibus, architecto?</p>
+    </div>
+    <div class="box10">
+      <h3>box10</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ullam sit accusamus tempore, aperiam autem
+        nemo voluptates aliquam reiciendis, perspiciatis necessitatibus nisi repellat aspernatur cum, consequuntur
+        assumenda ab! Necessitatibus, architecto?</p>
+    </div>
+    <div class="box11">
+      <h3>box11</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ullam sit accusamus tempore, aperiam autem
+        nemo voluptates aliquam reiciendis, perspiciatis necessitatibus nisi repellat aspernatur cum, consequuntur
+        assumenda ab! Necessitatibus, architecto?</p>
+    </div>
+    <div class="box12">
+      <h3>box12</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ullam sit accusamus tempore, aperiam autem
+        nemo voluptates aliquam reiciendis, perspiciatis necessitatibus nisi repellat aspernatur cum, consequuntur
+        assumenda ab! Necessitatibus, architecto?</p>
+    </div>
+    <div class="box13">
+      <h3>box13</h3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet ullam sit accusamus tempore, aperiam autem
+        nemo voluptates aliquam reiciendis, perspiciatis necessitatibus nisi repellat aspernatur cum, consequuntur
+        assumenda ab! Necessitatibus, architecto?</p>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!-- reference: -->
+<!-- https://developer.mozilla.org/zh-TW/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes -->

@@ -1,0 +1,22 @@
+.page {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-nav {
+    border: red 1px solid;
+    margin: 0.5em;
+    flex: 1;
+}
+
+.page-content {
+    border: red 1px solid;
+    margin: 0.5em;
+    flex: 10;
+}
+
+.page-footer {
+    border: red 1px solid;
+    margin: 0.5em;
+    flex: 1;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .wrapper {
+      display: grid;
+      /* grid-template-columns: 1fr 1fr 1fr; */
+      /* grid-template-columns: repeat(4, 1fr 2fr); */
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1em;
+      /* grid-auto-rows: 100px;set height of row */
+      grid-auto-rows: minmax(100px, auto);
+    }
+
+    .nested {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 70px;
+      grid-gap: 1em;
+    }
+
+    .wrapper > div {
+      background: #eee;
+      padding: 1em;
+    }
+
+    .wrapper > div:nth-child(odd){
+      background: #ddd;
+    }
+
+    .nested > div {
+      border: #333 1px solid;
+      padding: 1em;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, deserunt!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga amet ea autem exercitationem quidem mollitia et. Necessitatibus maiores id corporis facilis, recusandae, nulla consequuntur doloribus, consequatur eligendi optio dolor quas porro nisi nemo blanditiis soluta animi commodi molestias laudantium ex eos. Distinctio pariatur ut ab nulla nobis autem eos, quidem ratione nemo cumque est, aperiam totam perspiciatis cupiditate enim dicta ad deserunt illo inventore. Necessitatibus dolores expedita, amet exercitationem ullam consectetur praesentium a quidem, molestiae fuga veniam tenetur quisquam sapiente.
+    </div>
+    <div class="nested">
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, deserunt!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, deserunt!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, deserunt!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, deserunt!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, deserunt!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, deserunt!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, deserunt!
+    </div>
+  </div>
+</body>
+
+</html>

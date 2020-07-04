@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container1 {
+      display: flex;
+      /* align-items: flex-start; */
+      /* align-items: flex-end; */
+      /* align-items: center; */
+      /* flex-direction: column; */
+    }
+
+    .container2 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container1 > div {
+      border: black 1px solid;
+      padding: 1em;
+      margin: 1em;
+    }
+
+    .container2 > div {
+      background-color: burlywood;
+      padding: 1em;
+      margin: .5em;
+    }
+
+    .box1 {
+      flex: 3;
+      order: 2;
+    }
+
+    .box2 {
+      flex: 1;
+      order: 1;
+    }
+
+    .box3 {
+      flex: 1;
+      order: 3;
+    }
+
+    .box4 {
+      width: 30%;
+    }
+     .box5{
+       width: 40%;
+     }
+     .box6{
+       width: 50%;
+     }
+     .box7{
+       width: 60%;
+     }
+     .box8{
+       width: 70%;
+     }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container1">
+    <div class="box1">
+      <h3>box 1</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quo?</p>
+    </div>
+    <div class="box2">
+      <h3>box 2</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quo?</p>
+    </div>
+    <div class="box3">
+      <h3>box 3</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum, quo?</p>
+    </div>
+  </div>
+
+  <div class="container2">
+    <div class="box4">
+      <h3>box 4</h3>
+      <p>Lorem</p>
+    </div>
+    <div class="box5">
+      <h3>box 5</h3>
+      <p>Lorem</p>
+    </div>
+    <div class="box6">
+      <h3>box 6</h3>
+      <p>Lorem</p>
+    </div>
+    <div class="box7">
+      <h3>box 7</h3>
+      <p>Lorem</p>
+    </div>
+    <div class="box8">
+      <h3>box 8</h3>
+      <p>Lorem</p>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!-- reference: -->
+<!-- https://developer.mozilla.org/zh-TW/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes -->
