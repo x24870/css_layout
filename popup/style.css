@@ -17,4 +17,29 @@ body {
 
 .pop-div {
   text-align: center;
+  position: relative;
+  background-color: rgb(180, 180, 180);
+}
+
+.pop-div .poptext {
+  visibility: hidden;
+  background-color: rgb(105, 202, 170);
+  color: rgb(0, 82, 54);
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -6rem; /*bad solution to align center*/
+}
+
+.pop-div .show{
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn{
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
