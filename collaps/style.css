@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+button {
+  background-color: burlywood;
+  width: 100%;
+  padding: .5rem;
+  font-size: 20px;
+  border: none;
+}
+
+button:hover,
+button:focus{
+  background-color: darkgoldenrod;
+}
+
+.content {
+  background-color: cornflowerblue;
+  padding: .5rem;
+}
