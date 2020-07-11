@@ -3,20 +3,23 @@ h1 {
   text-transform: capitalize;
 }
 
-button {
+.collapsible {
   background-color: burlywood;
   width: 100%;
   padding: .5rem;
   font-size: 20px;
+  text-align: left;
   border: none;
+  outline: none;
+  cursor: pointer;
 }
 
-button:hover,
-button:focus{
+button:hover, .active{
   background-color: darkgoldenrod;
 }
 
 .content {
-  background-color: cornflowerblue;
+  background-color: rgb(255, 227, 158);
   padding: .5rem;
+  display: none;
 }
