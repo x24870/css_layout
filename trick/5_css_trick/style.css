@@ -1,0 +1,120 @@
+/* reference: https://medium.com/better-marketing/5-little-css-tricks-to-make-your-website-go-a-long-way-7cda61fcd7d0 */
+
+
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+  font-size : 1.2rem;
+}
+
+h1 {
+  font-size : 5rem;
+  text-align: center;
+  padding   : 3rem;
+}
+
+h2 {
+  font-size     : 3rem;
+  padding-top   : 1rem;
+  text-transform: capitalize;
+}
+
+div.container {
+  width : 80%;
+  margin: auto;
+}
+
+p {
+  margin : .5rem;
+  padding: .5rem;
+}
+
+/* 1. change selection color */
+::selection {
+  color           : bisque;
+  background-color: blueviolet;
+}
+
+/* 2. drop caps */
+.dropcap {
+  float    : left;
+  font-size: 200%;
+  color    : brown;
+  margin   : -1rem .1rem;
+}
+
+/* 3. overlay */
+#logo-container {
+  position: relative;
+  width   : fit-content;
+}
+
+#logo {
+  width: 500px;
+}
+
+.overlay {
+  position      : absolute;
+  top           : 0;
+  left          : 0;
+  height        : 100%;
+  width         : 100%;
+  color         : red;
+  opacity       : 0;
+  transition    : 0.5s ease;
+  pointer-events: none;
+}
+
+.text {
+  font-size : 2rem;
+  text-align: center;
+}
+
+#logo-container:hover .overlay {
+  opacity: 0.8;
+  cursor : pointer;
+}
+
+/* 4. Colorize and Zoom Into Image on Hover */
+.image {
+  width   : 100%;
+  overflow: hidden;
+}
+
+.image-colorize img {
+  transition: transform .5s, filter .5s ease-in-out;
+  filter    : grayscale(100%);
+}
+
+.image-colorize:hover img {
+  filter   : grayscale(0);
+  transform: scale(1.1);
+}
+
+/* 5. play with image masking */
+#img-wrap {
+  /* margin: 0; */
+  /* width             : 100vw; */
+  height            : 100vh;
+  background        : url('./palace.jpg');
+  mask-image        : url('./palace_mask.png');
+  -webkit-mask-image: url('./palace_mask.png');
+  mask-size         : cover;
+  -webkit-mask-size : cover;
+  background-size   : cover;
+}
+
+.sticky {
+  position     : -webkit-sticky;
+  position     : sticky;
+  top          : 0;
+  z-index      : -1;
+  padding      : 50px;
+  text-align   : center;
+  margin-bottom: -500px;
+}
+
+.sticky h1 {
+  font-size: 13rem;
+}
