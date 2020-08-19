@@ -59,7 +59,7 @@ section img {
   font-family: Arial Black;
   position   : absolute;
   color      : brown;
-  width: 100%;
+  /* width: 80vw; */
   overflow: hidden;
   
   user-select: none;
@@ -68,14 +68,14 @@ section img {
 
 #text1 {
   text-align: center;
-  font-size  : 15em;
-  top    : 350px;
+  font-size  : 20vw;
+  /* top    : 30%; */
   z-index: 1;
 }
 
 #text2 {
   text-align: center;
-  font-size  : 12em;
-  top    : 160%;
+  font-size  : 15vw;
+  /* top    : 160%; */
   z-index: 3;
 }
