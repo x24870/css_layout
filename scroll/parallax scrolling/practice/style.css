@@ -75,8 +75,8 @@ section img {
   transform    : translateX(-50%);
   top          : 63%;
 
-  border   : none;
-  /* border: 1px solid #0a6926; */
+  /* border   : none; */
+  border: 1px solid #0a6926;
 
   box-shadow:
     -5px -5px 10px 0.5px #388850cb,
@@ -84,22 +84,35 @@ section img {
     inset 2px 2px 5px #115827;
 }
 
+#bottom-gradient button:hover {
+  background: rgba(58, 58, 58, 0.2);
+}
+
+#bottom-gradient button:active {
+  background: rgba(58, 58, 58, 0.2);
+  box-shadow:
+    -5px -5px 10px 0.5px #388850cb,
+    5px 5px 20px #023110,
+    inset 1px 1px 10px #03290f;
+}
+
 button:focus {
   outline: none;
   cursor : pointer;
 }
 
+
 .scroll-prompt {
   position : fixed;
-  top   : 60vh;
+  top      : 60vh;
   left     : 50%;
   transform: translateX(-50%);
-  z-index: 3;
+  z-index  : 3;
 }
 
 .scroll-prompt-arrow-container {
-  animation-name: bounce;
-  animation-duration: 1.5s;
+  animation-name           : bounce;
+  animation-duration       : 1.5s;
   animation-iteration-count: infinite;
 }
 
@@ -111,7 +124,7 @@ button:focus {
 
 .scroll-prompt-arrow:last-child {
   animation-direction: reverse;
-  margin-top: -6px;
+  margin-top         : -6px;
 }
 
 div.scroll-prompt-arrow {
