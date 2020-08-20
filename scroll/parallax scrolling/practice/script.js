@@ -10,6 +10,13 @@ function init() {
     $('#text2').css('top', text2_top + 'px');
     // console.log(text1_top, text2_top);
 
+    $('#bottom-gradient').css('top', h*0.85+'px');
+    $('#bottom-gradient').css('height', h*0.15+'px');
+    
+    // console.log(document.documentElement.clientHeight,
+    //     document.documentElement.offsetHeight,
+    //     document.documentElement.scrollHeight)
+
 }
 
 function onResize() {
