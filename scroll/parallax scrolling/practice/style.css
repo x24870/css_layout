@@ -44,47 +44,172 @@ section img {
   text-align: center;
   font-size : 20vw;
   z-index   : 1;
-  color: rgba(117, 118, 209, 0.7);
+  color     : rgba(117, 118, 209, 0.7);
 }
 
 #text2 {
   text-align: center;
   font-size : 15vw;
   z-index   : 3;
-  color: rgba(209, 117, 152, 0.8);
+  color     : rgba(209, 117, 152, 0.8);
 }
 
 #bottom-gradient {
-  position: absolute;
-  width: 100%;
-  /* height: 200px; */
+  position     : absolute;
+  width        : 100%;
+  /* height    : 200px; */
   /* background: rgb(11, 114, 25); */
-  background: linear-gradient(transparent, #0a6926, #0a6926);
-  z-index: 6;
+  background   : linear-gradient(transparent, #0a6926, #0a6926);
+  z-index      : 6;
 }
 
 #bottom-gradient button {
-  padding: 1.5vw;
-  color: rgb(206, 216, 204);
-  font-family: Arial Black;
-  font-size: 2vw;
+  padding      : 1.5vw;
+  color        : rgb(206, 216, 204);
+  font-family  : Arial Black;
+  font-size    : 2vw;
   border-radius: 2rem;
-  background: transparent;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 63%;
+  background   : transparent;
+  position     : relative;
+  left         : 50%;
+  transform    : translateX(-50%);
+  top          : 63%;
 
-  border: none;
+  border   : none;
   /* border: 1px solid #0a6926; */
-  
-  box-shadow: 
-    -5px -5px 10px 0.5px #388850cb, 
+
+  box-shadow:
+    -5px -5px 10px 0.5px #388850cb,
     5px 5px 20px #023110,
     inset 2px 2px 5px #115827;
 }
 
 button:focus {
   outline: none;
-  cursor: pointer;
+  cursor : pointer;
+}
+
+.scroll-prompt {
+  position : fixed;
+  top   : 60vh;
+  left     : 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.scroll-prompt-arrow-container {
+  animation-name: bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.scroll-prompt-arrow {
+  animation-name           : opacity;
+  animation-duration       : 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.scroll-prompt-arrow:last-child {
+  animation-direction: reverse;
+  margin-top: -6px;
+}
+
+div.scroll-prompt-arrow {
+  width        : 80px;
+  height       : 80px;
+  border-right : 15px solid #a0a7ca9c;
+  border-bottom: 15px solid #a0a7ca9c;
+  transform    : rotate(45deg);
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  10% {
+    transform: translateY(6px);
+  }
+
+  20% {
+    transform: translateY(12px);
+  }
+
+  30% {
+    transform: translateY(18px);
+  }
+
+  40% {
+    transform: translateY(24px);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  60% {
+    transform: translateY(36px);
+  }
+
+  70% {
+    transform: translateY(42px);
+  }
+
+  80% {
+    transform: translateY(48px);
+  }
+
+  90% {
+    transform: translateY(54px);
+  }
+
+  100% {
+    transform: translateY(60px);
+  }
 }

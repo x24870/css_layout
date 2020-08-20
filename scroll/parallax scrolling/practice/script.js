@@ -10,9 +10,9 @@ function init() {
     $('#text2').css('top', text2_top + 'px');
     // console.log(text1_top, text2_top);
 
-    $('#bottom-gradient').css('top', h*0.85+'px');
-    $('#bottom-gradient').css('height', h*0.15+'px');
-    
+    $('#bottom-gradient').css('top', h * 0.85 + 'px');
+    $('#bottom-gradient').css('height', h * 0.15 + 'px');
+
     // console.log(document.documentElement.clientHeight,
     //     document.documentElement.offsetHeight,
     //     document.documentElement.scrollHeight)
@@ -40,6 +40,13 @@ function onScroll() {
 
         let tree_top_offset = -scroll_val * 0.08;
         $('#tree').css('top', tree_top_offset + 'px');
+
+        // disable scroll prompt
+        if (scroll_val > 10) {
+            $('.scroll-prompt').css('display', 'none');
+        } else {
+            $('.scroll-prompt').css('display', 'block');
+        }
     });
 }
 
