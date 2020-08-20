@@ -35,10 +35,7 @@ section img {
 .text {
   font-family: Arial Black;
   position   : absolute;
-  color      : brown;
-  /* width   : 80vw; */
   overflow   : hidden;
-
   user-select: none;
   z-index    : 3;
 }
@@ -46,15 +43,15 @@ section img {
 #text1 {
   text-align: center;
   font-size : 20vw;
-  /* top    : 30%; */
   z-index   : 1;
+  color: rgba(117, 118, 209, 0.7);
 }
 
 #text2 {
   text-align: center;
   font-size : 15vw;
-  /* top    : 160%; */
   z-index   : 3;
+  color: rgba(209, 117, 152, 0.8);
 }
 
 #bottom-gradient {
@@ -67,13 +64,27 @@ section img {
 }
 
 #bottom-gradient button {
-  padding: 1vw;
+  padding: 1.5vw;
   color: rgb(206, 216, 204);
   font-family: Arial Black;
   font-size: 2vw;
+  border-radius: 2rem;
   background: transparent;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: 60%;
+  top: 63%;
+
+  border: none;
+  /* border: 1px solid #0a6926; */
+  
+  box-shadow: 
+    -5px -5px 10px 0.5px #388850cb, 
+    5px 5px 20px #023110,
+    inset 2px 2px 5px #115827;
+}
+
+button:focus {
+  outline: none;
+  cursor: pointer;
 }
