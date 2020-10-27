@@ -10,24 +10,26 @@ body {
   display        : flex;
   align-items    : center;
   justify-content: center;
+  perspective    : 1000;
 }
 
 .container {
-  // background-color: rgb(85, 77, 10);
-  width          : 50%;
+  // background-color: wheat;
+  width          : 70%;
   display        : flex;
   align-items    : center;
   justify-content: center;
 }
 
 .card {
-  min-height         : 90vh;
-  width              : 35em;
-  // background-color: rgb(204, 153, 177);
-  box-shadow         : 0 20px 20px rgba(0, 0, 0, 0.2),
+  min-height      : 90vh;
+  width           : 35em;
+  background-color: rgba(212, 198, 204, 0.89);
+  box-shadow      : 0 20px 20px rgba(0, 0, 0, 0.2),
     0 0 50px rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
-  padding      : 0rem 5rem;
+  border-radius  : 30px;
+  padding        : 0rem 5rem;
+  transform-style: preserve-3d;
 }
 
 .sneaker {
@@ -35,12 +37,13 @@ body {
   display        : flex;
   align-items    : center;
   justify-content: center;
-  margin-top: 1.5rem;
+  margin-top     : 1.5rem;
 
   img {
-    width   : 20rem;
-    position: absolute;
-    z-index : 2;
+    transition: all 0.5s ease-out;
+    width     : 20rem;
+    position  : absolute;
+    z-index   : 2;
   }
 
   .circle {
@@ -56,7 +59,8 @@ body {
 }
 
 .info h1 {
-  font-size: 3rem;
+  font-size : 3rem;
+  transition: all 0.3s ease-out;
 }
 
 .info h3 {
@@ -64,35 +68,46 @@ body {
   padding    : 2rem 0rem;
   color      : #585858;
   font-weight: lighter;
+  transition : all 0.5s ease-out;
 }
 
-.sizes button {
-  padding      : 0.5rem 2rem;
-  background   : none;
-  border       : none;
-  box-shadow   : 0 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
-  cursor       : pointer;
-  font-weight  : bold;
-  color        : #585858;
+.sizes {
+  transition: all 0.5s ease-out;
 
-  &:focus{
-    outline: none;
+  button {
+    padding      : 0.5rem 2rem;
+    background   : none;
+    border       : none;
+    box-shadow   : 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor       : pointer;
+    font-weight  : bold;
+    color        : #585858;
+    background   : white;
+    transition   : all 0.5s ease-out;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 
-.sizes button.active{
+.sizes button.active {
   background: #585858;
-  color: white;
+  color     : white;
 }
 
-.purchase button{
-  width: 100%;
-  margin-top: 4rem;
-  padding: 1rem 0rem;
-  background: rgb(85, 77, 10);
-  color: white;
-  cursor: pointer;
-  border-radius: 30px;
-  font-weight: bolder;
+.purchase {
+  transition: all 0.5s ease-out;
+
+  button {
+    width        : 100%;
+    margin-top   : 4rem;
+    padding      : 1rem 0rem;
+    background   : rgb(85, 77, 10);
+    color        : white;
+    cursor       : pointer;
+    border-radius: 30px;
+    font-weight  : bolder;
+  }
 }
