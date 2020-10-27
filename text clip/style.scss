@@ -1,0 +1,40 @@
+* {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+body {
+  height     : 100%;
+  font-family: sans-serif;
+  background : linear-gradient(
+    60deg, #f3558e, #c5e3f6
+  );
+}
+
+.container {
+  width          : 100%;
+  height         : 100vh;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
+}
+
+.forest {
+  background-image          : url('forest.jpg');
+  background-position       : center;
+  background-size           : cover;
+  font-size                 : 10rem;
+  -webkit-background-clip   : text;
+  // background-clip        : text;
+  color                     : transparent;
+  background-attachment     : fixed;
+  font-weight               : bolder;
+}
+
+.gradient {
+  background             : linear-gradient(#17b978, #071a52);
+  font-size              : 8rem;
+  -webkit-background-clip: text;
+  color                  : transparent;
+}
